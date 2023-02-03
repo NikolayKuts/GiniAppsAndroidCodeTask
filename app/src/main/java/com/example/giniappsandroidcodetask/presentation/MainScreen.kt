@@ -1,4 +1,4 @@
-package com.example.giniappsandroidcodetask.presintation
+package com.example.giniappsandroidcodetask.presentation
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
@@ -24,7 +24,7 @@ private const val HEIGHT_REGULAR = 100
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun MainScreen(viewModel: MainScreenViewModel) {
+fun MainScreen(viewModel: BaseMainScreenViewModel) {
     val numberStates by viewModel.data.collectAsState()
 
     LazyVerticalGrid(

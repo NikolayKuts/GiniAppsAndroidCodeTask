@@ -1,4 +1,4 @@
-package com.example.giniappsandroidcodetask.presintation
+package com.example.giniappsandroidcodetask.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val viewModel by viewModels<MainScreenViewModel>()
+        val viewModel: BaseMainScreenViewModel by viewModels<MainScreenViewModel>()
 
         setContent {
             GiniAppsAndroidCodeTaskTheme {
